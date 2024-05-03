@@ -30,14 +30,16 @@ function App() {
     <ChakraBaseProvider theme={theme}>
       <ShopContextProvider>
         <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Menu />} />
-            <Route path="/menu/:id" element={<MenuItemDetails />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/address" element={<Address />} />
-            <Route path="/user" element={<GithubAuth />} />
-          </Routes>
+          <div style={{ minHeight: "87vh" }}>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Menu />} />
+              <Route path="/menu/:id" element={<MenuItemDetails />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/address" element={<Address />} />
+              <Route path="/user" element={<GithubAuth />} />
+            </Routes>
+          </div>
           <Footer />
         </BrowserRouter>
       </ShopContextProvider>
