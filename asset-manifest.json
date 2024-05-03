@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-cart-project/static/css/main.4781bb8c.css",
+    "main.js": "/react-cart-project/static/js/main.dad826f7.js",
+    "static/media/bootstrap-icons.woff?": "/react-cart-project/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/react-cart-project/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/react-cart-project/index.html",
+    "main.4781bb8c.css.map": "/react-cart-project/static/css/main.4781bb8c.css.map",
+    "main.dad826f7.js.map": "/react-cart-project/static/js/main.dad826f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4781bb8c.css",
+    "static/js/main.dad826f7.js"
+  ]
+}
