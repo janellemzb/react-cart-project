@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../styles.css";
 import { Button, Text } from "@chakra-ui/react";
 
@@ -37,6 +37,12 @@ const GithubAuth = () => {
     localStorage.removeItem("auth");
     setAuth(false);
   };
+
+  useEffect(() => {
+    if (localStorage.getItem("auth")) {
+      setAuth(true);
+    }
+  });
 
   return (
     <section className="vh-100" style={{ backgroundColor: "white" }}>
