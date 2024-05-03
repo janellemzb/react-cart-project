@@ -14,6 +14,7 @@ export default function Cart() {
     cartItems.map((item) => {
       ans += item.price * item.amount;
     });
+    setTotal(ans)
   };
 
   useEffect(() => {
