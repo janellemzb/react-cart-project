@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  font-weight: 300;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb-link {
+  color: black; /* Default color */
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  color: red; /* Change to red on hover */
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+.banner {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+}
