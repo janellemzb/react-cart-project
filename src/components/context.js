@@ -50,12 +50,14 @@ export const ShopContextProvider = (props) => {
       })
     );
     setCartItems((prev) =>
-      prev.map((item) => {
-        if (item.id === id && item.count > 0) {
-          return { ...item, count: item.count - 1 };
-        }
-        return item;
-      })
+      prev
+        .map((item) => {
+          if (item.id === id && item.count > 0) {
+            return { ...item, count: item.count - 1 };
+          }
+          return item;
+        })
+        .filter((item) => item.count > 0)
     );
   };
 
