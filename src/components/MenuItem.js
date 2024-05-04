@@ -38,7 +38,7 @@ export default function MenuItem({ item, addToCart }) {
           <ButtonGroup spacing="2" alignItems={"center"}>
             <Button
               variant="solid"
-              colorScheme="blue"
+              colorScheme="red"
               isDisabled={!isItemAdded}
               onClick={() => incrementCount(item.id)}
             >
@@ -48,7 +48,7 @@ export default function MenuItem({ item, addToCart }) {
 
             <Button
               variant="solid"
-              colorScheme="blue"
+              colorScheme="red"
               isDisabled={!isItemAdded}
               onClick={() => decrementCount(item.id)}
             >
@@ -57,7 +57,7 @@ export default function MenuItem({ item, addToCart }) {
           </ButtonGroup>
           <Button
             variant="ghost"
-            colorScheme="blue"
+            colorScheme="red"
             onClick={() =>
               isItemAdded ? removeFromCart(item.id) : addToCart(item)
             }
